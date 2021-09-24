@@ -1,0 +1,14 @@
+base_url = "https://phd-recruiting.com"
+compile_sass = true
+build_search_index = true
+theme = "juice"
+
+[markdown]
+# Whether to do syntax highlighting
+# Theme can be customised by setting the `highlight_theme` variable to a theme supported by Zola
+highlight_code = true
+
+[extra]
+# Put all your custom variables here
+juice_logo_path = "img/cap.png"
+juice_logo_name = "2021 CS[-ish] PhD Recruiting!"
