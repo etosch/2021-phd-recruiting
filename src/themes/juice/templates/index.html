@@ -1,56 +1,30 @@
+{% import "_macros.html" as macros %}
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
-    <title></title>
+    <title>{% block title %}{{ config.title }}{% endblock title %}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <style>
-    :root {
-        /* Primary theme color */
-        --primary-color: #FED43F;
-        /* Primary theme text color */
-        --primary-text-color: #543631;
-        /* Primary theme link color */
-        --primary-link-color: #F9BB2D;
-        /* Secondary color: the background body color */
-        --secondary-color: #fcfaf6;
-        --secondary-text-color: #303030;
-        /* Highlight text color of table of content */
-        --toc-highlight-text-color: #d46e13;
-    }
-</style>
+    {% include "_variables.html" %}
     <link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Fira+Sans:400,500,600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/normalize.css">
-    <link rel="stylesheet" href="https://phd-recruiting.com/juice.css">
-    
-    
+    <link rel="stylesheet" href="{{ get_url(path="juice.css") }}">
+    {% block head %}
+    {% endblock head %}
 </head>
 
 <body>
-    
+    {% block header %}
 
     <header class="pos-absolute" style="background-color: transparent">
-        
-
-<a href="https:&#x2F;&#x2F;phd-recruiting.com&#x2F;">
-    <div class="logo">
-        <img src="https://phd-recruiting.com/img/cap.png" alt="logo">
-        2021 CS[-ish] PhD Recruiting!
-    </div>
-</a>
-
-<nav>
-    
-    
-</nav>
-
+        {{ macros::render_header() }}
         <div class="title-text"><a href="https://2020.phd-recruiting.com">2020 Event Website</a></div>
     </header>
 
     <div class="hero">
-        
+        {% block hero %}
         <script async defer src="https://buttons.github.io/buttons.js"></script>
         <section class="text-center">
             <h1 class="heading-text" style="font-size: 50px">
@@ -64,7 +38,7 @@
                 We are actively recruiting <a href="#panelist-recruiting">panelists</a> and <a href="#prospective-student-participants">student participants</a>.
             </h3>
         </section>
-        <img class="hero-image" style="width: 50%" src="https://phd-recruiting.com/img/cap.png">
+        <img class="hero-image" style="width: 50%" src="{{ get_url(path="img/cap.png") }}">
 
         <div class="explore-more text"
             onclick="document.getElementById('features').scrollIntoView({behavior: 'smooth'})">
@@ -84,65 +58,56 @@
                 }
             }
         </style>
-        
+        {% endblock hero %}
     </div>
 
-    
+    {% endblock header %}
 
     <main>
-        
-        
-        
-        
-        
+        {% block toc %}
+        {% if section.toc %}
+        {% set toc = section.toc %}
+        {% elif page.toc %}
+        {% set toc = page.toc %}
+        {% endif %}
+        {% if toc %}
         <div class="toc">
             <div class="toc-sticky">
-                
+                {% for h in toc %}
                 <div class="toc-item">
-                    <a class="subtext" href="https://phd-recruiting.com/#panelist-recruiting">Panelist Recruiting</a>
+                    <a class="subtext" href="{{h.permalink | safe}}">{{ h.title }}</a>
                 </div>
-                
-                
-                <div class="toc-item">
-                    <a class="subtext" href="https://phd-recruiting.com/#prospective-student-participants">Prospective Student Participants</a>
+                {% if h.children %}
+                {% for h2 in h.children %}
+                <div class="toc-item-child">
+                    <a class="subtext" href="{{h2.permalink | safe}}"><small>- {{ h2.title }}</small></a>
                 </div>
-                
-                
+                {% endfor %}
+                {% endif %}
+                {% endfor %}
             </div>
         </div>
-        
-        
+        {% endif %}
+        {% endblock toc %}
 
         <div class="content text">
-            
+            {% block content %}
             <div id="features" class="heading-text"></div>
-            <h1 id="panelist-recruiting">Panelist Recruiting</h1>
-<p>We are currently <a href="https://forms.gle/CfgsS7MMvXwFQmtG9">seeking out panelists</a> (not necessarily recruiting faculty) with the following characteristics:</p>
-<ol>
-<li>Folks currently working <em>outside academia</em> who had <em>some research experience</em>, but decided that the PhD was not for them.</li>
-<li>Folks currently working <em>outside academia</em> who have a PhD (we are especially interested in nontraditional paths).</li>
-<li><em>Current students</em>, including final-year undergraduates, Master's-level students and PhD students. <strong>Note: we pay our student volunteers a $50 honorarium for their time out of faculty startup funds.</strong></li>
-</ol>
-<p>Our <a href="https://forms.gle/Z87daquN3kjHiD7d6">recruiting faculty form</a> will remain open until October 15; we currently have greater need for non-recruiting panelists.</p>
-<h1 id="prospective-student-participants">Prospective Student Participants</h1>
-<p>This event is for individuals who are considering graduate school <em>and</em> who will be eligible to enter a graduate degree program by Fall 2022. We especially welcome folks from industry, atypical backgrounds, and current students looking to change their degree programs. </p>
-<p>This event scales with the number of recruiting faculty and core organizers. Therefore, it is possible that not everyone who applies will be able to attend. However, all content will be posted publicly after the event, and the Discord server we will be using during the event will be made public. </p>
-<p><a href="https://forms.gle/HCpXQwRkqgT8UrWc9">Apply here.</a></p>
-
-            
+            {{ section.content | safe }}
+            {% endblock content %}
         </div>
 
-        
-        
+        {% block sidebar %}
+        {% endblock %}
     </main>
 
-    
+    {% block footer %}
     <footer>
         <small class="subtext">
             This page built with Zola using the <a href="https://huhu.io">Huhu.io theme</a> © 2021
         </small>
     </footer>
-    
+    {% endblock footer %}
 </body>
 <script>
     function highlightNav(heading) {
