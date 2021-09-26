@@ -1,0 +1,40 @@
+{% extends "juice/templates/index.html" %}
+
+
+{% block content %}
+
+{% if section.content %}
+    {{ section.content }}
+{% endif %}
+
+{% if section.pages %}
+    {% for page in section.pages %}
+        {{ page.content  | safe  }}
+    {% endfor %}
+{% endif %}
+
+{% if section.subsections %}
+    {% for page in section.subsections %}
+        {% set section =  get_section(path=page) %}
+        {% if section.content %}
+            {{  section.content | safe }}
+            {% if section.pages %}
+                {% for page in section.pages %}
+
+                <div width="30%" style="float:left">
+                    <div>
+                        <img alt={{ page.extra.last }} 
+                             src={{ page.extra.img }}
+                             
+                             />
+                    </div>
+                    <b>Name</b>: {{ page.extra.first }} {{page.extra.last}}
+                </div>
+                {% endfor %}
+            {% endif %}
+        {% endif %}
+    {% endfor %}
+{% endif %}
+
+{% endblock content %}
+
