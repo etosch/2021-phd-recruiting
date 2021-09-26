@@ -1,5 +1,6 @@
 +++
 template = "index.html"
+redirect_to = "#prospective-student-participants"
 +++
 # Prospective Student Participants
 

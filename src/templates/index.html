@@ -1,5 +1,92 @@
 {% extends "juice/templates/index.html" %}
 
+{% block hero %}
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+        <section class="text-center">
+            <h1 class="heading-text" style="font-size: 50px">
+                Save the date!
+            </h1>
+            <h3 class="title-text">
+                This event will take place on Friday, October 29, 2021.
+            </h3>
+            <h3>We are actively recruiting <a href="#panelist-recruiting">panelists</a> and <a href="#prospective-student-participants">student participants</a>. </h3>
+        </section>
+        <img class="hero-image" style="width: 50%" src="{{ get_url(path="img/cap.png") }}">
+
+        <div class="explore-more text"
+            onclick="document.getElementById('features').scrollIntoView({behavior: 'smooth'})">
+            Explore More ⇩
+        </div>
+        <style>
+            .hero section {
+                padding: 0 5rem;
+            }
+            @media screen and (max-width: 768px) {
+                .hero section {
+                    padding: 0 2rem;
+                }
+
+                .hero-image {
+                    display: none
+                }
+            }
+        </style>
+{% endblock hero %}
+
+{% block toc %}
+
+{% if section.toc %}
+    {% set toc = section.toc %}
+{% elif page.toc %}
+    {% set toc = page.toc %}
+{% else %}
+    {% set toc = [] %}
+{% endif %}
+
+{% if section.pages %}
+    {% for page in section.pages %}
+        {% if page.toc %}
+            {% set_global toc =  toc | concat(with=page.toc) %}
+        {% else %}
+        {# ASDF*{{__tera_context}}*FDSA #}
+        {% endif %}
+    {% endfor %}
+{% endif %}
+
+{% if section.subsections %}
+    {% for page in section.subsections %}
+        {% set page = get_section(path=page) %}
+        {% if page.toc %}
+            {% set_global toc =  toc | concat(with=page.toc) %}
+        {% else %}
+        {# FDSA*{{__tera_context}}*ASDF #}
+        {% endif %}
+    {% endfor %}
+{% endif %}
+
+{% if toc %}
+<div class="toc">
+    <div class="toc-sticky">
+        {% for h in toc %}
+        <div class="toc-item">
+            <a class="subtext" href="#{{h.id | safe}}">{{ h.title }}</a>
+        </div>
+        {% if h.children %}
+        {% for h2 in h.children %}
+        <div class="toc-item-child">
+            <a class="subtext" href="{{h2.permalink | safe}}"><small>- {{ h2.title }}</small></a>
+        </div>
+        {% endfor %}
+        {% endif %}
+        {% endfor %}
+    </div>
+</div>
+{% endif %}
+{% endblock toc %}
+
+
+
+
 
 {% block content %}
 
@@ -13,28 +100,83 @@
     {% endfor %}
 {% endif %}
 
-{% if section.subsections %}
+<div width="100%">
+    <style>
+        .faculty {
+            width: 46%;
+            min-height: 256px;
+            margin: 0px 0px 10px 0px;
+            padding: 10px 10px 10px 10px;
+            background-color:teal ;
+            text-align: left;
+            font-size: 12pt;
+            border-radius: 5%;
+            color: black;
+            border-style: solid;
+        }
+
+        .faculty img {
+            max-width: 128px; 
+            max-height:128px;
+            border-radius:5px;
+            float:right;
+            margin-left: 10px;
+            margin-top: 5px;
+            border-color: black;
+            border-style: outset;
+            border-width: thick;
+        }
+
+        .faculty li {
+            padding-left: 0px;
+        }
+
+        @media screen and (max-width: 480px) {
+            .faculty {
+                width: 100%;
+            }
+        }
+    </style>
+
+    {% if section.subsections %}
     {% for page in section.subsections %}
         {% set section =  get_section(path=page) %}
         {% if section.content %}
             {{  section.content | safe }}
             {% if section.pages %}
-                {% for page in section.pages %}
-
-                <div width="30%" style="float:left">
-                    <div>
-                        <img alt={{ page.extra.last }} 
-                             src={{ page.extra.img }}
-                             
-                             />
-                    </div>
-                    <b>Name</b>: {{ page.extra.first }} {{page.extra.last}}
+                {% set_global parity = 0 %}
+                {% for subpage in section.pages %}
+                    {% if subpage.extra %}
+                        {% if parity == 0 %}
+    <div class="faculty" style="float:left">
+                        {%else%}
+    <div class="faculty" style="float:right">
+                        {%endif%}
+            <div >
+                <p width="100%"><b>Name</b>:&nbsp;<a href="{{subpage.extra.prof_url | safe}}">Prof. {{ subpage.extra.first }} {{subpage.extra.last}}</a><br/>
+                <b>Institution</b>:&nbsp; <a href="{{subpage.extra.grad_url | safe}}">{{subpage.extra.institution}}</a><br/>
+            {% if subpage.extra.institution_note %}
+                    <span style="font-size: 10pt;">&nbsp;({{subpage.extra.institution_note}})</span><br/>
+                {% endif %}
+                </p>
+            </div>
+            <div>
+                <img alt="{{ subpage.extra.last }}"
+                src="{{ subpage.extra.img | safe }}"
+                />   
+                <p><b>Research Area(s)</b>:&nbsp; {{subpage.extra.area}}
+    
+                </p>
+                            </div>
                 </div>
+                    {% endif %}
+                {% set_global parity = (parity + 1) % 2 %}
                 {% endfor %}
             {% endif %}
         {% endif %}
     {% endfor %}
 {% endif %}
+</div>
 
 {% endblock content %}
 
