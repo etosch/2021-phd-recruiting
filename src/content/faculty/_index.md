@@ -1,5 +1,6 @@
 +++
 template = "index.html"
+weight = 90
 +++
 
 # Recruiting Faculty

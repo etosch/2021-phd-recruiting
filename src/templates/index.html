@@ -100,7 +100,6 @@
     {% endfor %}
 {% endif %}
 
-<div width="100%">
     <style>
         .faculty {
             width: 44%;
@@ -140,40 +139,41 @@
 
     {% if section.subsections %}
     {% for page in section.subsections %}
+
         {% set section =  get_section(path=page) %}
         {% if section.content %}
             {{  section.content | safe }}
             {% if section.pages %}
+            <div width="100%">
                 {% for subpage in section.pages %}
                     {% if subpage.extra %}
-                    <div class="faculty" style="float:left">
-                
-            <div >
-                <p width="100%"><b>Name</b>:&nbsp;<a href="{{subpage.extra.prof_url | safe}}">Prof. {{ subpage.extra.first }} {{subpage.extra.last}}</a><br/>
+    <div class="faculty" style="float:left">            
+        <div >
+            <p width="100%"><b>Name</b>:&nbsp;<a href="{{subpage.extra.prof_url | safe}}">Prof. {{ subpage.extra.first }} {{subpage.extra.last}}</a><br/>
                 <b>Institution</b>:&nbsp; <a href="{{subpage.extra.grad_url | safe}}">{{subpage.extra.institution}}</a><br/>
-            {% if subpage.extra.institution_note %}
-                    <span style="font-size: 10pt;">&nbsp;({{subpage.extra.institution_note}})</span><br/>
-                {% endif %}
-                </p>
-            </div>
-            <div>
-                {% if subpage.extra.img %}
-                <img alt="{{ subpage.extra.last }}"
+
+                        {% if subpage.extra.institution_note %}
+                <span style="font-size: 10pt;">&nbsp;({{subpage.extra.institution_note}})</span><br/>
+                        {% endif %}
+            </p>
+        </div>
+        <div>
+                        {% if subpage.extra.img %}
+            <img alt="{{ subpage.extra.last }}"
                 src="{{ subpage.extra.img | safe }}"
                 />   
-                {%endif%}
-                <p><b>Research Area(s)</b>:&nbsp; {{subpage.extra.area}}
-    
-                </p>
-                            </div>
-                </div>
+                        {% endif %}
+            <p><b>Research Area(s)</b>:&nbsp; {{subpage.extra.area}}</p>
+        </div>
+    </div>
                     {% endif %}
                 {% endfor %}
             {% endif %}
         {% endif %}
+    </div>
     {% endfor %}
 {% endif %}
-</div>
+
 
 {% endblock content %}
 

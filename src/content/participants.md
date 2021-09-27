@@ -1,6 +1,7 @@
 +++
 template = "index.html"
 redirect_to = "#prospective-student-participants"
+weight = 1
 +++
 # Prospective Student Participants
 
