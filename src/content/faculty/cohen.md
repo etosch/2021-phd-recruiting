@@ -9,5 +9,5 @@ grad_url = "https://computerscience.uchicago.edu/admissions/graduate/"
 img = ""
 institution = "University of Chicago -- Computer Science & Data Science Initiative"
 last = "Cohen"
-prof_url = "aloni.net"
+prof_url = "https://aloni.net"
 +++
