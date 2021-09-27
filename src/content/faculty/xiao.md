@@ -1,4 +1,6 @@
 +++
+draft=false
+
 [extra]
 area = "Robotics, motion planning, machine learning"
 email="xiao@cs.utexas.edu"

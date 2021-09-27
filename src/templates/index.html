@@ -103,14 +103,14 @@
 <div width="100%">
     <style>
         .faculty {
-            width: 46%;
+            width: 44%;
             min-height: 256px;
-            margin: 0px 0px 10px 0px;
+            margin: 0px 0px 10px 10px;
             padding: 10px 10px 10px 10px;
             background-color:teal ;
             text-align: left;
             font-size: 12pt;
-            border-radius: 5%;
+            border-radius: 7px;
             color: black;
             border-style: solid;
         }
@@ -144,14 +144,10 @@
         {% if section.content %}
             {{  section.content | safe }}
             {% if section.pages %}
-                {% set_global parity = 0 %}
                 {% for subpage in section.pages %}
                     {% if subpage.extra %}
-                        {% if parity == 0 %}
-    <div class="faculty" style="float:left">
-                        {%else%}
-    <div class="faculty" style="float:right">
-                        {%endif%}
+                    <div class="faculty" style="float:left">
+                
             <div >
                 <p width="100%"><b>Name</b>:&nbsp;<a href="{{subpage.extra.prof_url | safe}}">Prof. {{ subpage.extra.first }} {{subpage.extra.last}}</a><br/>
                 <b>Institution</b>:&nbsp; <a href="{{subpage.extra.grad_url | safe}}">{{subpage.extra.institution}}</a><br/>
@@ -161,16 +157,17 @@
                 </p>
             </div>
             <div>
+                {% if subpage.extra.img %}
                 <img alt="{{ subpage.extra.last }}"
                 src="{{ subpage.extra.img | safe }}"
                 />   
+                {%endif%}
                 <p><b>Research Area(s)</b>:&nbsp; {{subpage.extra.area}}
     
                 </p>
                             </div>
                 </div>
                     {% endif %}
-                {% set_global parity = (parity + 1) % 2 %}
                 {% endfor %}
             {% endif %}
         {% endif %}
