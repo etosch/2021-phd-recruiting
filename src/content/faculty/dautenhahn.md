@@ -9,5 +9,5 @@ grad_url = "https://csweb.rice.edu/academics/graduate-programs/admission/graduat
 img = ""
 institution = "Computer Science Department Rice University"
 last = "Dautenhahn"
-prof_url = "nathandautenhahn.com"
+prof_url = "https://nathandautenhahn.com"
 +++

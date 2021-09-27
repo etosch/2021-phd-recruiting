@@ -9,5 +9,5 @@ grad_url = "https://cs.nyu.edu/home/phd/admission.html"
 img = ""
 institution = "NYU Courant Instutute"
 last = "Panda"
-prof_url = "cs.nyu.edu/~apanda/"
+prof_url = "https://cs.nyu.edu/~apanda/"
 +++

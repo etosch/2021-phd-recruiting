@@ -9,5 +9,5 @@ grad_url = "https://www.dal.ca/academics/programs/graduate/computer-science/admi
 img = "img/Tushar_.jpeg"
 institution = "Dalhousie University"
 last = "Sharma"
-prof_url = "www.tusharma.in"
+prof_url = "https://www.tusharma.in"
 +++
