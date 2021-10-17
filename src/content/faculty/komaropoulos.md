@@ -1,5 +1,5 @@
 +++
-draft = true
+draft = false
 
 [extra]
 area = "Computer Security, Privacy, Applied Cryptography. I focus on analyzing and designing efficient encrypted systems using techniques from cryptography and algorithms."

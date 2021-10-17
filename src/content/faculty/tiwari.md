@@ -2,12 +2,12 @@
 draft = true
 
 [extra]
-area = ""
+area = "High Performance Computing; Data Center Systems; Quantum Computing"
 email = ""
-first = ""
-grad_url = ""
+first = "Devesh"
+grad_url = "https://ece.northeastern.edu/academics/graduate-studies/phd-cmpe/"
 img = ""
-institution = ""
-last = ""
-prof_url = ""
+institution = "Northeastern University"
+last = "Tiwari"
+prof_url = "https://goodwillcomputinglab.github.io/"
 +++

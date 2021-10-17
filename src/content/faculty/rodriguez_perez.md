@@ -1,13 +1,13 @@
 +++
-draft = true
+draft = false
 
 [extra]
-area = ""
+area = "Bug prediction, bug localization, Socio-technical aspects of Software engineering, Open Source Software development, Diversity and Inclusion"
 email = ""
-first = ""
-grad_url = ""
+first = "Gema"
+grad_url = "https://cmps.ok.ubc.ca/graduate/computer-science/#item4"
 img = ""
-institution = ""
-last = ""
-prof_url = ""
+institution = "University of British Columbia (Okanagan Campus)"
+last = "Rodriguez-Perez"
+prof_url = "https://cmps.ok.ubc.ca/about/contact/gema-rodriguez-perez/"
 +++

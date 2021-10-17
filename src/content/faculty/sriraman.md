@@ -1,5 +1,5 @@
 +++
-draft = true
+draft = false
 
 [extra]
 area = "Intersection of Computer Architecture and Operating Systems"
