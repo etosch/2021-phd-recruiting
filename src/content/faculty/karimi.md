@@ -6,8 +6,8 @@ area = "Machine Learning, Deep Learning, Data Mining, Social Media Mining, Socia
 email = ""
 first = "Hamid"
 grad_url = "https://cs.usu.edu/students/graduate/phd/admission-requirements"
-img = ""
+img = "img/hamid-Karimi-headshot.jpeg"
 institution = "Utah State University"
-last = "Karimi  "
+last = "Karimi"
 prof_url = "https://cs.usu.edu/people/faculty/hamid-karimi"
 +++

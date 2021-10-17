@@ -7,7 +7,7 @@ email = ""
 first = "Nikita"
 grad_url = "https://cs.uic.edu/graduate/admissions/"
 img = "img/NikitaSoni_headshot3.jpg"
-institution = "Department of Computer Science, University of Illinios Chicago"
+institution = "Department of Computer Science, University of Illinois Chicago"
 last = "Soni"
 prof_url = "https://nikitasoni.me/"
 +++
