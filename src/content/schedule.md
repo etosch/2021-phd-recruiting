@@ -18,17 +18,17 @@ Profs. Brittany Johnson-Matthews and Emma Tosch welcome participants and give an
 * *Working toward mastery: research skills* (11:00-11:25). Panelists discuss expectations of the research skills students should have upon entering a PhD program. *The objective of a PhD program is to train students to become independent researchers.* Possible topics include: what research actually is, how to learn research skills, best practices for improving research skills, how to advocate for yourself if you need help in this area.
 
 
-## Topical Panels (13:30-14:15)
+## <a name="topical-panels"></a>Topical Panels (13:30-14:15)
 Last year many students expressed an interest in specific areas of computer science and issues pertaining to the practice of computer science research. This year we will be offering topical panels to address any interest in these areas. *These two panels will run concurrently.*
 
 * *Computer Science vs. Information Science vs. Data Science* (13:30-14:15). Computer Science as a discipline grew out of Mathematics and Engineering departments. Today we increasingly see computational methods in non-traditional fields. As more and more students desire to study non-traditional domains with traditional computing methods, many ask: what is the right home for me? In this panel we will discuss the differences between these programs and how to target your search if you are interested in interdisciplinary fields such as human-computer interaction, algorithmic fairness, and computational social science.
 
 * *Scholarship, Identity, and Values-based Research* (13:30-14:15). Academia is often framed as not being a job, or even a profession, but a *vocation*. The implication in this statement is that academic researchers' work is often intertwined their their identities, both in terms of being scientists and scholars, and in the particulars of their work. Given the outsized role that technology plays in society, this relationship between self and work has changed rapidly. This panel will discuss how these topics interact. *Thanks to Nathan Dautenhahn for suggesting this topic.*
 
-## Alternative Paths (14:30-15:15)
+## Factuals and Counterfactuals (14:30-15:15)
 Academic research and becoming a professor are often presented as the expected outcome of starting a PhD program. In this session's panels, we will hear from people who decided that this traditional path was not for them. *These three panels will run concurrently.*
 
-* *The PhD wasn't for me* (14:30-15:15)
+* *Current Students* (14:30-15:15)
 * *Master's degrees: intended terminus vs. "mastering out"* (14:30-15:15)
 * *Post-PhD: The academy wasn't for me* (14:30-15:15)
 
