@@ -4,7 +4,7 @@ redirect_to = "#schedule"
 weight = 8
 +++
 
-# Schedule&nbsp;&nbsp;&nbsp;&nbsp;🚨~NEW~🚨
+# Schedule
 All times are listed as Eastern Daylight Time (GMT-4). _We recognize that many participants will be calling in from very different time zones. Unfortunately, we do not yet have the resources to multicast this event. We look forward to finding better solutions in the future._
 
 ## Welcome (8:45-9:15)
