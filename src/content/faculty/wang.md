@@ -6,9 +6,9 @@ area = "Systems -> Programming Languages, Formal Methods, Software Engineering -
 email = ""
 first = "Xinyu"
 grad_url = "https://cse.engin.umich.edu/academics/graduate/admissions/"
-img = ""
+img = "img/wang.jpeg"
 institution = "University of Michigan, Ann Arbor"
 last = "Wang"
 prof_url = "https://web.eecs.umich.edu/~xwangsd/"
-weight = 50
+weight = 0
 +++
