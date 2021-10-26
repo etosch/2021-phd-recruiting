@@ -10,4 +10,5 @@ img = ""
 institution = ""
 last = ""
 prof_url = ""
+weight = 100
 +++
