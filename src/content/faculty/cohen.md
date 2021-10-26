@@ -10,4 +10,5 @@ img = "img/aloni.jpg"
 institution = "University of Chicago -- Computer Science & Data Science Initiative"
 last = "Cohen"
 prof_url = "https://aloni.net"
+weight = 0
 +++

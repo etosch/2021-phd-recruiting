@@ -10,4 +10,5 @@ img = ""
 institution = "Pennsylvania State University"
 last = "Rafiul Hussain"
 prof_url = "https://syed-rafiul-hussain.github.io/"
+weight = 50
 +++

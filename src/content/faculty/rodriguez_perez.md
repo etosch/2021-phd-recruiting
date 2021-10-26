@@ -10,4 +10,5 @@ img = ""
 institution = "University of British Columbia (Okanagan Campus)"
 last = "Rodriguez-Perez"
 prof_url = "https://cmps.ok.ubc.ca/about/contact/gema-rodriguez-perez/"
+weight = 50
 +++

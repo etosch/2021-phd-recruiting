@@ -10,4 +10,5 @@ img = "img/feng-yuanyuan.jpg"
 institution = "University of Vermont"
 last = "Feng"
 prof_url = "https://yuanyuanfeng.com/"
+weight = 0
 +++

@@ -10,4 +10,5 @@ img = ""
 institution = "University of British Columbia, Vancouver"
 last = "Mehta"
 prof_url = "https://www.cs.ubc.ca/people/aastha-mehta"
+weight = 50
 +++

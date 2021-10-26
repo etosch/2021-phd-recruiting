@@ -10,4 +10,5 @@ img = "img/brown.jpg"
 institution = "Virginia Tech"
 last = "Brown"
 prof_url = "https://chbrown13.github.io/"
+weight = 0
 +++

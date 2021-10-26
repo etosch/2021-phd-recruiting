@@ -10,4 +10,5 @@ img = ""
 institution = "University of Michigan, Ann Arbor"
 last = "Wang"
 prof_url = "https://web.eecs.umich.edu/~xwangsd/"
+weight = 50
 +++

@@ -11,4 +11,5 @@ institution = "Stevens Institute of Technology"
 institution_note = "formerly Pomona College"
 last = "Greenberg"
 prof_url = "https://mgree.github.io"
+weight = 0
 +++

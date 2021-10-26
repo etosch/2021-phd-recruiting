@@ -10,4 +10,5 @@ img = ""
 institution = "Northeastern University"
 last = "Tiwari"
 prof_url = "https://goodwillcomputinglab.github.io/"
+weight  = 50
 +++

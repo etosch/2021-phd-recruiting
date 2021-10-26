@@ -10,4 +10,5 @@ img = ""
 institution = "UC Santa Cruz, Department of Computational Media"
 last = "Smith"
 prof_url = "https://engineering.ucsc.edu/people/amsmith"
+weight  = 50
 +++

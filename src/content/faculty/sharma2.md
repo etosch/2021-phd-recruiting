@@ -10,4 +10,5 @@ img = ""
 institution = "Indiana University"
 last = "Sharma"
 prof_url = "https://cgi.luddy.indiana.edu/~prateeks/"
+weight = 50
 +++

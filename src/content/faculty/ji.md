@@ -10,4 +10,5 @@ img = ""
 institution = "Department of Computer Science and Engineering, University of North Texas"
 last = "Ji"
 prof_url = "https://yuede.github.io/"
+weight = 50
 +++

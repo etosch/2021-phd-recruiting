@@ -10,4 +10,5 @@ img = ""
 institution = "University of Michigan/ Medical School and School of Information "
 last = "Popov"
 prof_url = "https://medicine.umich.edu/dept/lhs/vitaliy-popov-phd"
+weight = 50
 +++

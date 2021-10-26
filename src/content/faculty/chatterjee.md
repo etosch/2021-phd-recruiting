@@ -10,4 +10,5 @@ img = "img/chatterjee.png"
 institution = "Drexel University"
 last = "Chatterjee"
 prof_url = "https://preethac.github.io/"
+weight = 0
 +++

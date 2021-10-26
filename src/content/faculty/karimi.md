@@ -10,4 +10,5 @@ img = "img/hamid-Karimi-headshot.jpeg"
 institution = "Utah State University"
 last = "Karimi"
 prof_url = "https://cs.usu.edu/people/faculty/hamid-karimi"
+weight = 0
 +++

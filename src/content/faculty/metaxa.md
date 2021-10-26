@@ -10,4 +10,5 @@ img = ""
 institution = "University of Pennsylvania"
 last = "Metaxa"
 prof_url = "https://metaxa.net"
+weight = 50
 +++

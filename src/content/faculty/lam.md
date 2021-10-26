@@ -10,6 +10,7 @@ img = "img/winglam-full.png"
 institution = "George Mason University"
 last = "Lam"
 prof_url = "http://mir.cs.illinois.edu/winglam"
+weight = 25
 +++
 
 *I will not be able to attend this event synchronously. Please feel free to <a href="mailto:winglam2@illinois.edu">email me</a> if you are interested in working with me!*

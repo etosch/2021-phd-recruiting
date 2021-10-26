@@ -10,4 +10,5 @@ img = "img/mishra.jpg"
 institution = "Northeastern University"
 last = "Mishra"
 prof_url = "https://varunmishra.com"
+weight = 0
 +++

@@ -10,4 +10,5 @@ img = "img/Tushar_.jpeg"
 institution = "Dalhousie University"
 last = "Sharma"
 prof_url = "https://www.tusharma.in"
+weight =0
 +++

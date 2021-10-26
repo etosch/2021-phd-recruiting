@@ -10,4 +10,7 @@ img = "img/wilson.jpeg"
 institution = "Oakland University"
 last = "Wilson"
 prof_url = "https://steverw.com"
+weight = 25
 +++
+
+*I will not be able to attend this event synchronously. Please feel free to <a href="mailto:stevenwilson@oakland.edu">email me</a> if you are interested in working with me!*

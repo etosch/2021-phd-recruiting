@@ -10,4 +10,5 @@ img = "img/komaropoulos.jpg"
 institution = "Computer Science Department, George Mason University"
 last = "Kornaropoulos"
 prof_url = "https://encrypted.systems"
+weight = 0
 +++

@@ -10,4 +10,5 @@ img = "img/NikitaSoni_headshot3.jpg"
 institution = "Department of Computer Science, University of Illinois Chicago"
 last = "Soni"
 prof_url = "https://nikitasoni.me/"
+weight  =0
 +++

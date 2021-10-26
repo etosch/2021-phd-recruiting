@@ -10,4 +10,5 @@ img = "img/pasquier.jpg"
 institution = "University of British Columbia"
 last = "Pasquier"
 prof_url = "https://tfjmp.org/"
+weight = 0
 +++

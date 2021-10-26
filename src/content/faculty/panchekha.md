@@ -10,4 +10,5 @@ img = "img/pancheckha.jpg"
 institution = "University of Utah"
 last = "Panchekha"
 prof_url = "https://pavpanchekha.com"
+weight = 0
 +++

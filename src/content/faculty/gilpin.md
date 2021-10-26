@@ -10,4 +10,5 @@ img = "img/Leilani_Gilpin_6.jpg"
 institution = "University of California, Santa Cruz"
 last = "Gilpin"
 prof_url = "http://lgilpin.com"
+weight = 0
 +++

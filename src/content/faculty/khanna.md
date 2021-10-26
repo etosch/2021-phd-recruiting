@@ -10,4 +10,5 @@ img = ""
 institution = "Purdue University, Department of Computer Science"
 last = "Khanna"
 prof_url = "https://rjvak7.github.io"
+weight = 50
 +++

@@ -10,4 +10,5 @@ img = ""
 institution = "NYU Courant Instutute"
 last = "Panda"
 prof_url = "https://cs.nyu.edu/~apanda/"
+weight = 50
 +++

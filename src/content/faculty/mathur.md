@@ -10,4 +10,5 @@ img = ""
 institution = "National University of Singapore"
 last = "Mathur"
 prof_url = ""
+weight = 50
 +++

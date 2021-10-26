@@ -10,4 +10,5 @@ img = ""
 institution = "Virginia Tech"
 last = "Yang"
 prof_url = "https://vis.yalongyang.com/"
+weight = 50
 +++

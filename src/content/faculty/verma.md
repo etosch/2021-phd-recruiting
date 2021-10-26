@@ -10,4 +10,5 @@ img = ""
 institution = "The Pennsylvania State University"
 last = "Verma"
 prof_url = "https://averma8053.github.io"
+weight = 50
 +++

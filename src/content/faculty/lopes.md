@@ -10,4 +10,5 @@ img = ""
 institution = "University of Chicago, Computer Science"
 last = "Lopes"
 prof_url = "http://lab.plopes.org"
+weight = 50
 +++

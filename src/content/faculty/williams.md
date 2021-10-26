@@ -10,4 +10,5 @@ img = ""
 institution = "Virginia Tech"
 last = "Williams"
 prof_url = "https://people.cs.vt.edu/djwillia/"
+weight = 50
 +++

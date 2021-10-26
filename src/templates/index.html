@@ -135,7 +135,7 @@
     <style>
         .faculty {
             width: 44%;
-            min-height: 256px;
+            min-height: 336px;
             margin: 0px 0px 10px 10px;
             padding: 10px 10px 10px 10px;
             background-color:teal ;
@@ -177,9 +177,14 @@
             {{  section.content | safe }}
             {% if section.pages %}
             <div width="100%">
-                {% for subpage in section.pages %}
+                {% for subpage in section.pages | sort(attribute="extra.weight") %}
                     {% if subpage.extra %}
+                    {% if not subpage.extra.img %}                    
+    <div class="faculty" style="float:left; min-height: 290px;">
+                    {% else %}                    
     <div class="faculty" style="float:left">            
+                    {% endif %}
+        
         <div >
             <p width="100%"><b>Name</b>:&nbsp;<a href="{{subpage.extra.prof_url | safe}}">Prof. {{ subpage.extra.first }} {{subpage.extra.last}}</a><br/>
                 <b>Institution</b>:&nbsp; <a href="{{subpage.extra.grad_url | safe}}">{{subpage.extra.institution}}</a><br/>

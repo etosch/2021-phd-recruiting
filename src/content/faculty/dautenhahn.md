@@ -10,4 +10,5 @@ img = ""
 institution = "Computer Science Department Rice University"
 last = "Dautenhahn"
 prof_url = "https://nathandautenhahn.com"
+weight = 50
 +++

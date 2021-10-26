@@ -10,4 +10,5 @@ img = "img/figss.jpg"
 institution = "Drexel University, Department of Information Science"
 last = "Rezapour"
 prof_url = "https://www.shadirezapour.com/"
+weight = 0
 +++

@@ -10,4 +10,5 @@ img = "img/da_silva_santos.jpg"
 institution = "University of Notre Dame"
 last = "da Silva Santos"
 prof_url = "https://joannacss.github.io"
+weight = 0
 +++
