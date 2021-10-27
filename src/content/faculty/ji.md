@@ -6,9 +6,9 @@ area = "Cybersecurity, High-Performance Computing, Graph Analytics, and Graph Ne
 email = ""
 first = "Yuede"
 grad_url = "https://computerscience.engineering.unt.edu/graduate"
-img = ""
+img = "https://yuede.github.io/images/profile_formal.png"
 institution = "Department of Computer Science and Engineering, University of North Texas"
 last = "Ji"
 prof_url = "https://yuede.github.io/"
-weight = 50
+weight = 0
 +++

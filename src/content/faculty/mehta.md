@@ -6,9 +6,9 @@ area = "I am broadly interested in building systems that solve security problems
 email = ""
 first = "Aastha"
 grad_url = "https://www.cs.ubc.ca/students/grad/prospective"
-img = ""
+img = "https://aasthakm.github.io/imgs/Aastha_pic.jpg"
 institution = "University of British Columbia, Vancouver"
 last = "Mehta"
 prof_url = "https://www.cs.ubc.ca/people/aastha-mehta"
-weight = 50
+weight = 0
 +++
