@@ -2,6 +2,7 @@
 template = "index.html"
 redirect_to = "#prospective-student-participants"
 weight = 10
+draft = true
 +++
 # Prospective Student Participants
 
