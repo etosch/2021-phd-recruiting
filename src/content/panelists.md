@@ -1,6 +1,7 @@
 +++
 template = "index.html"
 weight = 9
+draft = true
 
 redirect_to = "index.html"
 +++
