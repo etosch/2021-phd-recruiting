@@ -1,0 +1,8 @@
+name: Build and Deploy
+on: [push]
+permisisons:
+  contents: write
+jobs:
+  build-and-deploy:
+    
+  
